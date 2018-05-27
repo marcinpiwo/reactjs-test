@@ -5,9 +5,10 @@ class PlacementMatch extends React.Component {
     return (
       <div className="PlacementMatch">
 
-        <h1>PlacementMatch Page</h1>
+        <h1>Buy Placement Match</h1>
         <img id="Unranked" src="Images/Division/Unranked.png" className="img-responsive" />
 
+        
 
         <div id="orders-container">
 
