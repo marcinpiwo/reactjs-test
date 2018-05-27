@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Nav, Navbar, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
-
+import { NavLink } from 'react-router-dom'
 class Menu extends React.Component {
+
     render() {
         return (
             <Navbar inverse collapseOnSelect>
@@ -14,12 +15,15 @@ class Menu extends React.Component {
                 <Navbar.Collapse>
                     <Nav>
                         <NavItem eventKey={1} href="#">
-                            Link
+                        <NavLink to="/" exact>Home</NavLink>
                         </NavItem>
-                        <NavItem eventKey={2} href="#">
-                            Link
+                        <NavItem eventKey={2}>
+                            <NavLink  to="/about" exact>About</NavLink>
                         </NavItem>
-                        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                        <NavItem eventKey={2}>
+                            <NavLink to="/buy-boost" exact>Buy Boost</NavLink>
+                        </NavItem>
+                        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown" >
                             <MenuItem eventKey={3.1}>Action</MenuItem>
                             <MenuItem eventKey={3.2}>Another action</MenuItem>
                             <MenuItem eventKey={3.3}>Something else here</MenuItem>
