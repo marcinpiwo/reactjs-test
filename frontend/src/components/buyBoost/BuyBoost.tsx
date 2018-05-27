@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
-
+import WinsBoost from './winsBoost/WinsBoost';
+import PlacementMatch from './placementMatch/PlacementMatch';
 
 class BuyBoost extends React.Component {
   render() {
@@ -8,10 +9,10 @@ class BuyBoost extends React.Component {
       <div className="container">
         <Tabs defaultActiveKey={2} id="uncontrolled-tab-example">
           <Tab eventKey={1} title="Placement Match">
-            Placement Match
+            <PlacementMatch />
           </Tab>
           <Tab eventKey={2} title="Wins Boost">
-            Wins Boost
+            <WinsBoost />
           </Tab>
         </Tabs>
 
